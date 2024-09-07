@@ -8,6 +8,7 @@ public class CalculadoraTests {
 		Calculadora miMaizoro = new Calculadora();
 		int resultado = (int) miMaizoro.sumar(100, 150);
 		System.out.println("Resultado suma =" + resultado);
+		System.out.println("Resultado division =" + miMaizoro.dividir(100, 150));
 	}
 
 }

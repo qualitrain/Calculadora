@@ -6,4 +6,10 @@ public class Calculadora {
 		return suma;
 	}
 
+	public <T extends Number> double dividir(T x, T y) {
+		double division = x.doubleValue() / y.doubleValue();
+		return division;
+	}
+	
 }
+
