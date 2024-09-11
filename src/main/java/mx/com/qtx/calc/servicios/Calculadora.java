@@ -21,5 +21,8 @@ public class Calculadora {
 		return division;
 	}
 	
+	public double sumar(int...nums) {
+		return 0;
+	}
 }
 
