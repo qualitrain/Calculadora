@@ -52,14 +52,17 @@ class CalculadoraTests {
 	@Test
 	void testMultiplicar() {
 		// Dados
-		int num1 = 1500;
+		int num1 = 1;
 		int num2 = 2;
+		int num3 = 3;
+		int num4 = 4;
+		int num5 = 5;
 		
 		// Cuando
 		Calculadora miMaizoro = new Calculadora();
-		int producto = miMaizoro.multiplicar(num1, num2);
+		double producto = miMaizoro.multiplicar(num1, num2, num3, num4, num5);
 		//Entonces
-		assertEquals(3000, producto, "No coincidieron el valor esperado y obtenido");
+		assertEquals(120, producto, "No coincidieron el valor esperado y obtenido");
 	}
 	
 	@Test
@@ -87,6 +90,28 @@ class CalculadoraTests {
 		double resultado = miMaizoro.dividir(dividendo, divisor);
 		//Entonces
 		assertEquals(50, resultado, 0.0000001, "No coinciden los valores esperado y obtenido");
+	}
+
+	@Test
+	void testRaizCuadrada() {
+		//Dados
+		double raiz = 9;
+		//Cuando
+		Calculadora miMaizoro = new Calculadora();
+		double resultado = miMaizoro.raizCuadrada(raiz);
+		//Entonces
+		assertEquals(3, resultado, 0.0000001, "No coinciden los valores esperado y obtenido");
+}
+	@Test
+	void testExponerA() {
+		//Dados
+		double num = 2;
+		int exponente = 4;
+		//Cuando
+		Calculadora miMaizoro = new Calculadora();
+		double resultado = miMaizoro.elevarA(num, exponente);
+		//Entonces
+
 	}
 
 }
