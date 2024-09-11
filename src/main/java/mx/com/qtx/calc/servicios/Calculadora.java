@@ -26,7 +26,8 @@ public class Calculadora {
 	}
 	
 	public double raizCuadrada(double num) { //Vicente
-		return 0;
+        double resultado = Math.sqrt(num);
+        return resultado;
 	}
 	
 	public double max(double ...nums) { // Rogelio
