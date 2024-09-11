@@ -63,6 +63,21 @@ class CalculadoraTests {
 	}
 	
 	@Test
+	//Cris Suma
+	void testsumar() {
+		// Dados
+		int num1 = 1;
+		int num2 = 2;
+		int num3 = 3;
+		
+		// Cuando
+		Calculadora miMaizoro = new Calculadora();
+		double num = miMaizoro.sumar(num1, num2, num3);
+		//Entonces
+		assertEquals(6, num, "No coincidieron el valor esperado y obtenido");
+	}
+	
+	@Test
 	void testDividir() {
 		//Dados
 		double dividendo = 500;

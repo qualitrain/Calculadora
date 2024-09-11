@@ -22,7 +22,11 @@ public class Calculadora {
 	}
 	
 	public double sumar(int...nums) { //Christofer
-		return 0;
+		 double sum = 0;
+	        for (int num : nums) {
+	            sum += num;
+	        }	        
+	        return sum;
 	}
 	
 	public double raizCuadrada(double num) { //Vicente
