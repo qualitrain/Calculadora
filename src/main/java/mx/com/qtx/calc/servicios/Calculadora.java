@@ -33,8 +33,12 @@ public class Calculadora {
 		return 0;
 	}
 	
-	public double multiplicar(int...nums) { // Ramón
-		return 0;
+	public double multiplicar(int... nums) {
+	    double resultado = 1.0;
+	    for (int num : nums) {
+	        resultado *= num;
+	    }
+	    return resultado;
 	}
 	
 	public double elevarA(double num, int exponente) { //Carlos

@@ -52,14 +52,17 @@ class CalculadoraTests {
 	@Test
 	void testMultiplicar() {
 		// Dados
-		int num1 = 1500;
+		int num1 = 1;
 		int num2 = 2;
+		int num3 = 3;
+		int num4 = 4;
+		int num5 = 5;
 		
 		// Cuando
 		Calculadora miMaizoro = new Calculadora();
-		int producto = miMaizoro.multiplicar(num1, num2);
+		double producto = miMaizoro.multiplicar(num1, num2, num3, num4, num5);
 		//Entonces
-		assertEquals(3000, producto, "No coincidieron el valor esperado y obtenido");
+		assertEquals(120, producto, "No coincidieron el valor esperado y obtenido");
 	}
 	
 	@Test
