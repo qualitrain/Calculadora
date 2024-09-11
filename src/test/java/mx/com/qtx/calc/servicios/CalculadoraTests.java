@@ -73,5 +73,17 @@ class CalculadoraTests {
 		//Entonces
 		assertEquals(50, resultado, 0.0000001, "No coinciden los valores esperado y obtenido");
 	}
+	
+	@Test
+	void testExponerA() {
+		//Dados
+		double num = 2;
+		int exponente = 4;
+		//Cuando
+		Calculadora miMaizoro = new Calculadora();
+		double resultado = miMaizoro.elevarA(num, exponente);
+		//Entonces
+		assertEquals(16, resultado, 0.0000000001, "No coinciden los valores esperado y obtenido");
+	}
 
 }
