@@ -26,7 +26,8 @@ public class Calculadora {
 	}
 	
 	public double raizCuadrada(double num) { //Vicente
-		return 0;
+        double resultado = Math.sqrt(num);
+        return resultado;
 	}
 	
 	public double max(double ...nums) { // Rogelio
@@ -42,7 +43,8 @@ public class Calculadora {
 	}
 	
 	public double elevarA(double num, int exponente) { //Carlos
-		return 0;
+		double resultado = Math.pow(num, exponente);
+		return resultado;
 	}
 	
 	public int random() { //Alex
