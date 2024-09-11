@@ -73,6 +73,7 @@ class CalculadoraTests {
 		//Entonces
 		assertEquals(50, resultado, 0.0000001, "No coinciden los valores esperado y obtenido");
 	}
+
 	@Test
 	void testRaizCuadrada() {
 		//Dados
@@ -82,6 +83,17 @@ class CalculadoraTests {
 		double resultado = miMaizoro.raizCuadrada(raiz);
 		//Entonces
 		assertEquals(3, resultado, 0.0000001, "No coinciden los valores esperado y obtenido");
+}
+	@Test
+	void testExponerA() {
+		//Dados
+		double num = 2;
+		int exponente = 4;
+		//Cuando
+		Calculadora miMaizoro = new Calculadora();
+		double resultado = miMaizoro.elevarA(num, exponente);
+		//Entonces
+
 	}
 
 }
