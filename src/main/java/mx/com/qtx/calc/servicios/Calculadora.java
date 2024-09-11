@@ -21,8 +21,29 @@ public class Calculadora {
 		return division;
 	}
 	
-	public double sumar(int...nums) {
+	public double sumar(int...nums) { //Christofer
 		return 0;
 	}
+	
+	public double raizCuadrada(double num) { //Vicente
+		return 0;
+	}
+	
+	public double max(double ...nums) { // Rogelio
+		return 0;
+	}
+	
+	public double multiplicar(int...nums) { // Ramón
+		return 0;
+	}
+	
+	public double elevarA(double num, int exponente) { //Carlos
+		return 0;
+	}
+	
+	public int random() { //Alex
+		return 0;
+	}
+
 }
 
