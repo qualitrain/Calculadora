@@ -61,5 +61,17 @@ class CalculadoraTests {
 		//Entonces
 		assertEquals(3000, producto, "No coincidieron el valor esperado y obtenido");
 	}
+	
+	@Test
+	void testDividir() {
+		//Dados
+		double dividendo = 500;
+		double divisor = 10;
+		//Cuando
+		Calculadora miMaizoro = new Calculadora();
+		double resultado = miMaizoro.dividir(dividendo, divisor);
+		//Entonces
+		assertEquals(50, resultado, 0.0000001, "No coinciden los valores esperado y obtenido");
+	}
 
 }
